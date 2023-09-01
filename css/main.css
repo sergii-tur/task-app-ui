@@ -1,4 +1,76 @@
+:root {
+  --darkest: #222228;
+  --dark: #2A2B33;
+  --grey: #5D5D5D;
+  --blue: #2F66DA;
+
+  --main-txt-color: #fff;
+  --sub-txt-color: #888990;
+
+  --txt-xl: 16px;
+  --txt-l: 14px;
+  --txt-m: 12px;
+  --txt-s: 10px;
+
+  --radius-xl: 10px;
+  --radius-l: 8px;
+  --radius-xs: 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body  {
   margin: 0;
+  
   background-color: darkgrey;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-l-r-20 {
+  padding: 0 20px 0px 20px;
+}
+
+.shadow {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.app-ctn {
+  height: 640px;
+  width: 360px;
+  margin: 0 auto;
+  background: var(--darkest);
+}
+
+.info {
+  height: 60px;
+  width: 100%;
+  background: #5D5D5D;
+}
+
+.days {
+  height: 80px;
+  width: 100%;
+  background: #353535;
+}
+
+.categories {
+  height: 100px;
+  width: 100%;
+  background: #2c2c2c;
+}
+
+.tasks {
+  height: 350px;
+  width: 100%;
+  background: #1b1a1a;
 }
