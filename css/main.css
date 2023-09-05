@@ -22,8 +22,8 @@
 }
 
 body  {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  
   background-color: darkgrey;
 }
 
@@ -44,6 +44,13 @@ body  {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+h2 {
+  color: var(--blue);
+  text-transform: uppercase;
+  font-size: var(--txt-m);
+  margin: 10px 0 10px 0;
+}
+
 .app-ctn {
   height: 640px;
   width: 360px;
@@ -60,17 +67,108 @@ body  {
 .days {
   height: 80px;
   width: 100%;
-  background: #353535;
+  padding-top: 12px;
+}
+
+.days-ctn {
+  overflow-y: hidden;
+  overflow-x: auto;
+  scrollbar-color: var(--darkest) var(--grey);
+  scrollbar-width: none;
+}
+
+.calendar-btn {
+  height: 60px;
+  min-width: 50px;
+  margin-right: 10px;
+  border: none;
+  border-radius: var(--radius-xl);
+  background: var(--dark) url("../img/calendar.svg") no-repeat center;
+  background-size: 40%;
+}
+
+.day-btn {
+  position: relative;
+  height: 60px;
+  min-width: 50px;
+  margin-right: 10px;
+  border: none;
+  border-radius: var(--radius-xl);
+  background: var(--dark);
+}
+
+.current-day {
+  background: var(--blue);
+}
+
+.btn-date {
+  color: var(--main-txt-color);
+  font-size: var(--txt-xl);
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.btn-weekday {
+  color: var(--sub-txt-color);
+}
+
+.current-day .btn-weekday {
+  color: var(--main-txt-color);
+}
+
+.day-btn .day-has-tasks {
+  position: absolute;
+  top: 0;
+  left: 36px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-txt-color);
+  font-size: var(--txt-m);
+  background: var(--blue);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.day-btn .day-has-tasks:empty {
+  display: none;
 }
 
 .categories {
   height: 100px;
   width: 100%;
-  background: #2c2c2c;
 }
 
 .tasks {
   height: 350px;
   width: 100%;
   background: #1b1a1a;
+}
+
+.category-ctn {
+  overflow-y: hidden;
+  overflow-x: auto;
+  scrollbar-color: var(--darkest) var(--grey);
+  scrollbar-width: none;
+}
+
+.mini-btn-add {
+  height: 14px;
+  width: 14px;
+  padding: 0;
+  margin: 12px 0 10px 10px;
+  border: none;
+  border-radius: 50%;
+  background: url("../img/add.svg") no-repeat;
+  background-size: cover;
+
+}
+
+.category {
+  height: 50px;
+  min-width: 110px;
+  margin-right: 20px;
+  border-radius: var(--radius-xl);
+  background-color: var(--dark);
 }

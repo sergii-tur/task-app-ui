@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task App</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <div class="app-ctn flex-column">
     <div class="info flex p-l-r-20">
       Test
     </div>
-    <div class="days flex p-l-r-20">
-      Test
+    <div class="days p-l-r-20">
+      <div class="days-ctn flex">
+        <button class="calendar-btn"></button>
+        <button class="day-btn">
+          <span class="btn-date">25</span><br />
+          <span class="btn-weekday">Fri</span>
+          <span class="day-has-tasks flex"></span>
+        </button>
+        <button class="day-btn current-day">
+          <span class="btn-date">26</span><br />
+          <span class="btn-weekday">Sat</span>
+          <span class="day-has-tasks flex">7</span>
+        </button>
+        <button class="day-btn">
+          <span class="btn-date">27</span><br />
+          <span class="btn-weekday">Sun</span>
+          <span class="day-has-tasks flex">4</span>
+        </button>
+        <button class="day-btn">
+          <span class="btn-date">28</span><br />
+          <span class="btn-weekday">Mon</span>
+          <span class="day-has-tasks flex"></span>
+        </button>
+        <button class="day-btn">
+          <span class="btn-date">29</span><br />
+          <span class="btn-weekday">Tue</span>
+          <span class="day-has-tasks flex"></span>
+        </button>
+      </div>
     </div>
-    <div class="categories flex p-l-r-20">
-      Test
+    <div class="categories flex-column p-l-r-20">
+      <div class="section-header flex">
+        <h2>Categories</h2>
+        <button class="mini-btn-add"></button>
+      </div>
+      <div class="category-ctn flex">
+        <div class="category shadow"></div>
+        <div class="category shadow"></div>
+        <div class="category shadow"></div>
+      </div>
     </div>
     <div class="tasks flex-column p-l-r-20">
-      Test
+      <h2>Today's tasks</h2>
     </div>
-  </div>  
+  </div>
 </body>
 <script src="js/main.js"></script>
+
 </html>
