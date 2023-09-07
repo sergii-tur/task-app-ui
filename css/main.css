@@ -36,8 +36,22 @@ body  {
   flex-direction: column;
 }
 
+.p-t-4 {
+  padding-top: 4px;
+}
+
+.p-l-4 {
+  padding-left: 4px;
+}
+
+.p-l-r-16-20 {
+  padding-left: 16px;
+  padding-right: 20px;
+}
+
 .p-l-r-20 {
-  padding: 0 20px 0px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .shadow {
@@ -140,17 +154,60 @@ h2 {
   width: 100%;
 }
 
-.tasks {
-  height: 350px;
-  width: 100%;
-  background: #1b1a1a;
-}
-
 .category-ctn {
+  height: 60px;
   overflow-y: hidden;
   overflow-x: auto;
   scrollbar-color: var(--darkest) var(--grey);
   scrollbar-width: none;
+}
+
+.category {
+  position: relative;
+  padding: 5px 0 0 10px;
+  height: 50px;
+  min-width: 110px;
+  margin-right: 20px;
+  border-radius: var(--radius-xl);
+  background-color: var(--dark);
+}
+
+.category-active {
+  outline: 1px solid var(--grey);
+}
+
+.category-tasks,
+.category-name {
+  margin: 0;
+}
+
+.category-tasks {
+  font-size: var(--txt-m);
+  color: var(--grey);
+}
+
+.category-name {
+  font-size: var(--txt-l);
+  font-weight: 600;
+  color: var(--main-txt-color);
+}
+
+.mini-btn-category {
+  position: absolute;
+  top: 14px;
+  right: 5px;
+  height: 20px;
+  width: 16px;
+  padding: 0;
+  border: none;
+  background: url("../img/menu-dots-vertical.svg") no-repeat;
+  background-size: cover;
+}
+
+.tasks {
+  height: 350px;
+  width: 100%;
+  background: #1b1a1a;
 }
 
 .mini-btn-add {
@@ -165,10 +222,3 @@ h2 {
 
 }
 
-.category {
-  height: 50px;
-  min-width: 110px;
-  margin-right: 20px;
-  border-radius: var(--radius-xl);
-  background-color: var(--dark);
-}
