@@ -4,6 +4,7 @@
   --grey: #5D5D5D;
   --blue: #2F66DA;
   --dark-blue: #2257c7;
+  --night: #02050b;
 
   --main-txt-color: #fff;
   --sub-txt-color: #888990;
@@ -42,6 +43,10 @@ body {
   padding-top: 4px;
 }
 
+.p-t-5 {
+  padding-top: 5px;
+}
+
 .p-t-16 {
   padding-top: 16px;
 }
@@ -78,6 +83,10 @@ body {
 
 .m-r-10 {
   margin-right: 10px;
+}
+
+.m-b-5 {
+  margin-bottom: 5px;
 }
 
 .shadow {
@@ -283,7 +292,7 @@ h2 {
 }
 
 .tasks {
-  height: 300px;
+  height: 315px;
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -298,6 +307,32 @@ h2 {
 
 .tasks::-webkit-scrollbar-thumb {
   background: var(--grey); 
+}
+
+.tasks-header {
+  justify-content: space-between;
+}
+
+.task-bar {
+  position: relative;
+  height: 2px;
+  width: 100px;
+  border-radius: 1px;
+  background: var(--night);
+}
+
+.task-progress {
+  height: 2px;
+  width: 66%;
+  border-radius: 1px;
+  background: var(--blue);
+  box-shadow: 0px 0px 4px var(--blue);
+}
+
+.task-counter-txt {
+  font-size: var(--txt-s);
+  color: var(--sub-txt-color);
+  text-align: center;
 }
 
 /* Hide the browser's default checkbox */
