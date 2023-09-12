@@ -54,6 +54,14 @@ body {
   padding-left: 10px;
 }
 
+.p-l-20 {
+  padding-left: 20px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
 .p-l-r-16-20 {
   padding-left: 16px;
   padding-right: 20px;
@@ -62,6 +70,10 @@ body {
 .p-l-r-20 {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px;
 }
 
 .m-r-10 {
@@ -116,6 +128,16 @@ h2 {
   overflow-x: auto;
   scrollbar-color: var(--darkest) var(--grey);
   scrollbar-width: none;
+}
+
+.days-ctn::-webkit-scrollbar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 2px;
+}
+
+.days-ctn::-webkit-scrollbar-thumb {
+  background: var(--grey); 
 }
 
 .calendar-btn {
@@ -187,6 +209,16 @@ h2 {
   overflow-x: auto;
   scrollbar-color: var(--darkest) var(--grey);
   scrollbar-width: none;
+}
+
+.category-ctn::-webkit-scrollbar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 2px;
+}
+
+.category-ctn::-webkit-scrollbar-thumb {
+  background: var(--grey); 
 }
 
 .category {
@@ -261,7 +293,11 @@ h2 {
 .tasks::-webkit-scrollbar {
   overflow-x: hidden;
   overflow-y: auto;
-  scrollbar-width: thin;
+  width: 2px;
+}
+
+.tasks::-webkit-scrollbar-thumb {
+  background: var(--grey); 
 }
 
 /* Hide the browser's default checkbox */
