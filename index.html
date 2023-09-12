@@ -10,8 +10,9 @@
 
 <body>
   <div class="app-ctn flex-column">
-    <div class="info flex p-l-r-20">
-      Test
+    <div class="info flex-column p-l-r-20 p-t-16">
+      <p class="info-txt">Saturday, Aug 26</p>
+      <p class="info-tasks">You have 5 tasks today</p>
     </div>
     <div class="days p-l-r-20">
       <div class="days-ctn flex">
@@ -52,25 +53,87 @@
         <div class="category category-active shadow">
           <p class="category-tasks"><span class="category-task-count">20</span> tasks</p>
           <p class="category-name">Personal</p>
-          <button class="mini-btn-category"></button>
+          <button class="mini-btn-dots category-btn-pos"></button>
         </div>
         <div class="category shadow">
           <p class="category-tasks"><span class="category-task-count">12</span> tasks</p>
           <p class="category-name">Business</p>
-          <button class="mini-btn-category"></button>
+          <button class="mini-btn-dots category-btn-pos"></button>
         </div>
         <div class="category shadow">
           <p class="category-tasks"><span class="category-task-count">9</span> tasks</p>
           <p class="category-name">Project X</p>
-          <button class="mini-btn-category"></button>
+          <button class="mini-btn-dots category-btn-pos"></button>
         </div>
       </div>
     </div>
-    <div class="tasks flex-column p-l-r-20">
+    <div class="flex-column p-l-r-20">
       <h2>Today's tasks</h2>
+      <div class="tasks">
+        <label class="task flex p-l-10">
+          <input type="checkbox" onclick="checkboxToggle(this)">
+          <span class="checkbox-custom m-r-10"></span>
+          <span class="task-txt">This is a first task</span>
+          <button class="mini-btn-dots task-btn-pos"></button>
+        </label>
+        <label class="task flex p-l-10">
+          <input type="checkbox" onclick="checkboxToggle(this)">
+          <span class="checkbox-custom m-r-10"></span>
+          <span class="task-txt">This is an example of a very long detailed task which collapses. Maximum number of lines
+            is 1. If there are more then one line, three dots are used</span>
+          <button class="mini-btn-dots task-btn-pos"></button>
+        </label>
+        <label class="task flex p-l-10">
+          <input type="checkbox" onclick="checkboxToggle(this)">
+          <span class="checkbox-custom m-r-10"></span>
+          <span class="task-txt">This is an example of a very long detailed task which collapses. Maximum number of lines
+            is 1. If there are more then one line, three dots are used</span>
+          <div class="task-menu-ctn flex">
+            <div class="task-menu-gradient"></div>
+            <button class="task-menu-btn edit-btn"></button>
+            <button class="task-menu-btn del-btn"></button>
+            <button class="task-menu-btn tag-btn"></button>
+          </div>
+          <button class="mini-btn-back task-btn-pos"></button>
+        </label>
+        <!--  -->
+        <label class="task flex p-l-10">
+          <input type="checkbox" onclick="checkboxToggle(this)">
+          <span class="checkbox-custom m-r-10"></span>
+          <span class="task-txt">This is a first task</span>
+          <button class="mini-btn-dots task-btn-pos"></button>
+        </label>
+        <label class="task flex p-l-10">
+          <input type="checkbox" onclick="checkboxToggle(this)">
+          <span class="checkbox-custom m-r-10"></span>
+          <span class="task-txt">This is a first task</span>
+          <button class="mini-btn-dots task-btn-pos"></button>
+        </label>
+        <label class="task flex p-l-10">
+          <input type="checkbox" onclick="checkboxToggle(this)">
+          <span class="checkbox-custom m-r-10"></span>
+          <span class="task-txt">This is a first task</span>
+          <button class="mini-btn-dots task-btn-pos"></button>
+        </label>
+        <label class="task flex p-l-10">
+          <input type="checkbox" onclick="checkboxToggle(this)">
+          <span class="checkbox-custom m-r-10"></span>
+          <span class="task-txt">This is a first task</span>
+          <button class="mini-btn-dots task-btn-pos"></button>
+        </label>
+        <label class="task flex p-l-10">
+          <input type="checkbox" onclick="checkboxToggle(this)">
+          <span class="checkbox-custom m-r-10"></span>
+          <span class="task-txt">This is a first task</span>
+          <button class="mini-btn-dots task-btn-pos"></button>
+        </label>
+      </div>
     </div>
+
+    <button class="create-task-btn">create new task</button>
   </div>
 </body>
+
 <script src="js/main.js"></script>
 
 </html>
