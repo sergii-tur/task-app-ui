@@ -39,6 +39,10 @@ body {
   flex-direction: column;
 }
 
+.hide {
+  display: none;
+}
+
 .p-t-4 {
   padding-top: 4px;
 }
@@ -274,11 +278,11 @@ h2 {
 .mini-btn-dots {
   position: absolute;
   height: 36px;
-  width: 16px;
+  width: 24px;
   padding: 0;
   border: none;
   background: url("../img/menu-dots-vertical.svg") no-repeat center;
-  background-size: 120%;
+  background-size: 80%;
 }
 
 .category-btn-pos {
@@ -454,11 +458,17 @@ h2 {
 .mini-btn-back {
   position: absolute;
   height: 36px;
-  width: 16px;
+  width: 25px;
   padding: 0;
   border: none;
   background: var(--dark) url("../img/back.svg") no-repeat center;
-  background-size: 140%;
+  background-size: 120%;
+  z-index: 100;
+}
+
+.back-btn-pos {
+  top: -3px;
+  left: 123px;
 }
 
 .create-task-btn {
