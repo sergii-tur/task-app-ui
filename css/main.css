@@ -440,19 +440,31 @@ h2 {
   padding: 0;
 }
 
+.edit-btn {
+  background: var(--dark) url("../img/edit.svg") no-repeat center;
+  background-size: 0%;
+  animation: .2s linear 200ms forwards btn-scale;
+}
+
 .del-btn {
   background: var(--dark) url("../img/delete.svg") no-repeat center;
-  background-size: 70%;
+  background-size: 0%;
+  animation: .2s linear 100ms forwards btn-scale;
 }
 
 .tag-btn {
   background: var(--dark) url("../img/tag.svg") no-repeat center;
-  background-size: 70%;
+  background-size: 0%;
+  animation: .2s linear 0s forwards btn-scale;
 }
 
-.edit-btn {
-  background: var(--dark) url("../img/edit.svg") no-repeat center;
-  background-size: 70%;
+@keyframes btn-scale {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 70%;
+  }
 }
 
 .mini-btn-back {
